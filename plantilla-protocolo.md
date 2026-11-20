@@ -20,7 +20,8 @@ Semana-Tienda (**# de tiendas X # de semanas**)
 
 - **Factor** (variable manipulada): Ubicación.
 - **Niveles** (valores del factor): Pasillo y Habitual.
-- **Tratamiento** (combinación asignada): Pasillo durante una semana y ubicación habitual durante otra, alternando. Un sorteo decide dónde empieza cada tienda.
+- **Tratamiento** (combinación asignada): Pasillo durante una semana y ubicación habitual durante  otra, alternando. uUn sorteo decide dónde empieza cada tienda.
+ 
 
 ## 4. Grupo de control
 
