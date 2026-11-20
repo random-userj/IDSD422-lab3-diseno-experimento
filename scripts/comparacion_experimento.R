@@ -1,10 +1,20 @@
-# comparacion_experimento.R — Comparación de grupos (R)
-# Completa los pasos marcados con TODO. Ejecuta desde la raíz del repositorio:
-#   Rscript scripts/comparacion_experimento.R
+# TODO 1: Cargar la plantilla de registro del experimento
+df <- read.csv("plantillas/registro_experimento.csv")
 
-# TODO 1: carga plantillas/registro_experimento.csv (read.csv)
-# TODO 2: calcula e imprime el promedio de ventas_producto por ubicacion
-#         (aggregate)
-# TODO 3: imprime el número de registros por grupo (table)
-# TODO 4: escribe 2–3 líneas de interpretación (sección 9 de la plantilla):
-#         por qué con 4 filas no se puede concluir y qué le faltaría al análisis
+# TODO 2: Calcular el promedio de ventas por ubicación
+cat("--- Promedio de ventas por ubicación ---\n")
+promedios <- aggregate(ventas_producto ~ ubicacion, data = df, FUN = mean)
+print(promedios)
+
+# TODO 3: Mostrar cuántas observaciones hay por cada grupo (tamaño de muestra)
+cat("\n--- Conteo de observaciones por grupo ---\n")
+conteos <- table(df$ubicacion)
+print(conteos)
+
+# TODO 4: Imprimir la interpretación de por qué esto no es suficiente
+cat("\n--- Interpretación de los límites ---\n")
+cat("El pasillo principal muestra mayor venta promedio ($1335 vs $1040).\n")
+cat("Sin embargo, con solo 4 filas (2 por grupo) no se puede concluir nada.\n")
+cat("Faltan datos, no hay asignación aleatoria real, no hay control de temporada\n")
+cat("y no tenemos una medida de variabilidad para descartar que sea simple azar.\n")
+
