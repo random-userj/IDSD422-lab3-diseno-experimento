@@ -93,7 +93,7 @@ Name: count, dtype: int64
 El pasillo principal muestra $1335 en venta, frente a $1040 en la ubicación habitual.
 
 - **¿Por qué con 4 filas no se puede concluir nada sobre el efecto de la ubicación?**
-No se puede concluir porque no hay ninguna asignación real aleatoria, los datos son muy pocos (2 filas por ubicación), no tenemos control de temporada, ni promociones en el grupo del pasillo y no hay una medida de variabilidad para descartar el azar.
+No se puede concluir porque no hay ninguna asignación real aleatoria, los datos son muy pocos (2 filas por ubicación), no tenemos control de temporada, ni promociones en el grupo del pasillo y no hay  una medida de variabilidad para descartar el azar.
 
 - **Si el experimento se ejecutara con tu protocolo, ¿qué le faltaría a este análisis para ser justo?**
 Faltaría comparar cada tienda consigo misma a lo largo de las semanas, controlar los factores externos y realizar una medición estadística real (como desviación e intervalos) para comprobar si el aumento no fue simple coincidencia.
